@@ -1,6 +1,4 @@
-package org.vcs.array;
-
-import com.sun.xml.internal.ws.api.client.SelectOptimalEncodingFeature;
+package org.vcs.string;
 
 public class StringProgramSimple {
     public static void main(String[] args) {
