@@ -18,8 +18,6 @@ public class SortingCharacter {
                     char temp = ch[i];
                     ch[i] = ch[j];
                     ch[j] = temp;
-
-
                 }
             }
 
