@@ -3,8 +3,9 @@ package org.vcs.string;
 public class ReverseString {
 
     public static void main(String[] args) {
-        String str = "VIVEK";
-        System.out.println("Revering string using char ="+reverseString(str));
+        StringBuilder  str = new StringBuilder("VIVEK Kumar");
+       // System.out.println("Revering string using char ="+reverseString(str));
+
     }
 
     private static String reverseString(String str) {

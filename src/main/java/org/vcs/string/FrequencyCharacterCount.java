@@ -1,12 +1,19 @@
 package org.vcs.string;
 
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class FrequencyCharacterCount {
     public static void main(String[] args) {
         String str = "vvvvvv  aaaaa kkkk o p";
         Map<Character, Integer> m1 = new HashMap<Character, Integer>();
+
+        ConcurrentHashMap<Integer,Integer> concurrentHashMap=new ConcurrentHashMap<>();
+
+        Map<Integer,Integer> i1=new Hashtable<>();
+        i1.put(4,3);
         m1 = countFrequecy(str);
         for (Map.Entry<Character, Integer> freqMap : m1.entrySet()
         ) {
@@ -19,7 +26,6 @@ public class FrequencyCharacterCount {
 
 
     private static Map<Character, Integer> countFrequecy(String str) {
-        int[] freq = new int[str.length()];
         int i, j;
         char[] string = str.toCharArray();
         Map<Character, Integer> m1 = new HashMap<Character, Integer>();

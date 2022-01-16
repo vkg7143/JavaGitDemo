@@ -3,7 +3,7 @@ package org.vcs.string;
 public class SentenceFirstLetterCapital {
     public static void main(String[] args) {
         {
-            String str = "My Name is khan";
+            String str = "my name is vivek";
             String result = convertWord(str);
             System.out.println("Converted string=" + result);
         }
@@ -14,7 +14,6 @@ public class SentenceFirstLetterCapital {
         String str1[];
         str1 = str.split(" ");
         String result = "";
-          int l=str1.length;
         for (int i = 0; i <1 ; i++) {
             {
                 char ch[];
